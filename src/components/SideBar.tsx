@@ -1,11 +1,11 @@
-import { useContext } from "react";
 import { Button } from "../components/Button";
+import { useMovies } from "../hooks/useMovies";
+
 import "../styles/sidebar.scss";
-import { MoviesContext } from "../moviesContext";
 
 export function SideBar() {
 
-  const { selectedGenreId, setSelectedGenreId, genres } = useContext(MoviesContext)
+  const { selectedGenreId, setSelectedGenreId, genres } = useMovies()
 
   function handleClickButton(id: number) {
     setSelectedGenreId(id);

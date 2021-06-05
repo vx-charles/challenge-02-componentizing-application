@@ -1,11 +1,10 @@
-import { useContext } from 'react';
 import { MovieCard } from '../components/MovieCard';
-import { MoviesContext } from '../moviesContext';
+import { useMovies } from '../hooks/useMovies';
 
 import '../styles/content.scss';
 
 export function Content() {
-  const { selectedGenre, movies } = useContext(MoviesContext)
+  const { selectedGenre, movies } = useMovies()
 
   return (
     <div className="container">

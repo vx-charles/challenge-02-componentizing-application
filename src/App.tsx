@@ -1,6 +1,6 @@
 import { SideBar } from './components/SideBar';
 import { Content } from './components/Content';
-import { MoviesProvider } from './moviesContext';
+import { MoviesProvider } from './hooks/useMovies';
 
 import './styles/global.scss';
 
